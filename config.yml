@@ -25,11 +25,11 @@ users:
         # 账号
         username: '21312273'
         # 密码
-        password: 'xuyang0226..'
+        password: 'xuyang0226'
         # 定位位置信息
         address: '安徽省蒙城县城关镇玖龙皇家花园'
         #sendKey 当sendType为0时代表邮箱，当sendType为1时代表接收消息的QQ号码
-        sendKey: '1181010780@qq.com'
+        sendKey: ''
         # 附上经纬度查询地址（请自行选择自己的学校地址，address，lon，lat都要填查询到的）：http://api.map.baidu.com/lbsapi/getpoint/index.html
         # 经纬度信息
         lon: 116.534937
