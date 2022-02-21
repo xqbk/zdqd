@@ -19,50 +19,71 @@ users:
   # 这里默认仅适配宜宾学院，其他学校自行修改
   - user:
         # 任务类型（收集：0、签到：1、查寝2）
-        type: 0
+        # 任务类型（收集：0、签到：1、查寝2）
+        type: 1
         # 学校名称
         schoolName: '安徽城市管理职业学院'
         # 账号
         username: '21312273'
         # 密码
-        password: 'xuyang0226'
+        password: 'xuyang0226..'
         # 定位位置信息
-        address: '安徽省蒙城县城关镇玖龙皇家花园'
+        address: '合肥市蜀山区耕耘路158号'
         #sendKey 当sendType为0时代表邮箱，当sendType为1时代表接收消息的QQ号码
-        sendKey: ''
+        sendKey: '1181010780@qq.com'
         # 附上经纬度查询地址（请自行选择自己的学校地址，address，lon，lat都要填查询到的）：http://api.map.baidu.com/lbsapi/getpoint/index.html
         # 经纬度信息
-        lon: 116.534937
+        lon: 117.240772
         #经纬度信息
-        lat: 33.24545
+        lat: 31.767152
+        #abnormalReason 反馈信息（这个一般不用配置，但是不能删除，删除会报错）
+        abnormalReason: ''
+        #photo 签到照片，不需要可不填，或者直接删除
+        photo: qiandao.jpg   #将签到照片放到根目录photo文件夹，支持多张照片随机签到，若不用照片可忽略！
         # 是否检查表单的标题（1代表检查，0代表不检查）
-        checkTitle: 1
+        checkTitle: 0
         # 表单信息
         forms:
             - form:
-                  title: 今日具体所在地
-                  value: 安徽省/亳州市/蒙城县
-            - form:
-                  title: 今天你的体温是多少
-                  value: 37.2℃及以下
-            - form:
-                  title: 今天你的健康状况是
-                  value: 健康
-            - form:
-                  title: 近14天你或你的共同居住人是否有疫情中，高风险区域人员接触史
-                  value: 否
-            - form:
-                  title: 近14天你或你的共同居住人是否和确诊，疑似病人接触过
-                  value: 否
-            - form:
-                  title: 近14天你或你的共同居住人是否是确诊，疑似病例
-                  value: 否
-            - form:
-                  title: 你或你的共同居住人目前是否被医学隔离
-                  value: 否
-            - form:
-                  title: 今天你当地的健康码颜色是
-                  value: 绿色
-            - form:
-                  title: 本人承诺
+                  title: 您今日午检体温是否正常
                   value: 是
+            - form:
+                  title: 您今日午检具体体温是
+                  value: 其它
+                  other: 36.4
+
+
+  - user:
+        # 任务类型（收集：0、签到：1、查寝2）
+        # 任务类型（收集：0、签到：1、查寝2）
+        type: 1
+        # 学校名称
+        schoolName: '安徽城市管理职业学院'
+        # 账号
+        username: '21112014'
+        # 密码
+        password: '20020604'
+        # 定位位置信息
+        address: '合肥市瑶海区淮海大道300号'
+        #sendKey 当sendType为0时代表邮箱，当sendType为1时代表接收消息的QQ号码
+        sendKey: '1181010780@qq.com'
+        # 附上经纬度查询地址（请自行选择自己的学校地址，address，lon，lat都要填查询到的）：http://api.map.baidu.com/lbsapi/getpoint/index.html
+        # 经纬度信息
+        lon: 117.397655
+        #经纬度信息
+        lat: 31.936112
+        #abnormalReason 反馈信息（这个一般不用配置，但是不能删除，删除会报错）
+        abnormalReason: ''
+        #photo 签到照片，不需要可不填，或者直接删除
+        photo: qiandao.jpg   #将签到照片放到根目录photo文件夹，支持多张照片随机签到，若不用照片可忽略！
+        # 是否检查表单的标题（1代表检查，0代表不检查）
+        checkTitle: 0
+        # 表单信息
+        forms:
+            - form:
+                  title: 您今日午检体温是否正常
+                  value: 是
+            - form:
+                  title: 您今日午检具体体温是
+                  value: 其它
+                  other: 36.4
